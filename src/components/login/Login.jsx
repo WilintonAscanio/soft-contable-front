@@ -4,48 +4,50 @@ import { BsEye } from 'react-icons/bs'
 import './login.scss'
 import logo from '../../assets/logo.svg'
 import { Autocomplete } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false)
+  const navigate = useNavigate()
 
   const togglePassword = () => {
     setShowPassword(!showPassword)
   }
   return (
     <article className='login'>
-      <form>
+      <form className='login__form'>
         <figure>
           <img src={logo} alt="logo" />
         </figure>
-        <Autocomplete />
+        {/* <Autocomplete /> */}
 
-        <h3>Hi, Welcome Back</h3>
+        <h4>Hi, Welcome Back</h4>
         <small>Enter your credentials to continue</small>
-        <label>
+        <label className='login__form__user'>
           Username
           <input type="text" placeholder='Type your username' />
         </label>
-        {!showPassword ? <section>
+        {!showPassword ? <section className='login__form__pwd'>
           <label>
             Password
             <input type="password" placeholder='Type your password' />
           </label>
-          <BsFillEyeSlashFill onClick={() => togglePassword()} />
+          <BsFillEyeSlashFill onClick={() => togglePassword()} className='eye' />
         </section> :
-          <section>
+          <section className='login__form__pwd'>
             <label>
               Password
               <input type="text" placeholder='Type your password' />
             </label>
-            <BsEye onClick={() => togglePassword()} />
+            <BsEye onClick={() => togglePassword()} className='eye' />
 
 
           </section>}
 
         <strong>Forgot Password?</strong>
 
-        <button>Sign In</button>
+        <button onClick={() => navigate('/')}>Sign In</button>
       </form>
 
 

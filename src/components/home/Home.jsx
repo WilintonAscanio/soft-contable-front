@@ -67,7 +67,6 @@ const Home = () => {
                             </small>
                             <div>
                                 <small onClick={() => navigate('/login')}>Login</small>
-                                <small>Register</small>
 
                             </div>
 
