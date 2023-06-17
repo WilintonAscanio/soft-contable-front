@@ -1,0 +1,197 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__header {
+        width: 100%;
+        height: 80px;
+        padding: 20px;
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+
+
+
+        &__nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+            height: 100%;
+
+
+
+            &__figure {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                width: 300px;
+
+            }
+
+            &__links {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &__search {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    height: 50px;
+                    width: 400px;
+                    border: 1px solid rgb(219, 211, 211);
+                    border-radius: 12px;
+                    padding: 10px;
+
+                    & input {
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        padding: 5px;
+                        width: 90%;
+
+                        &::placeholder {
+                            color: gray;
+                            font-weight: 400;
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid black;
+                    }
+
+
+
+                }
+
+                &__user {
+                    display: flex;
+                    align-items: center;
+                    width: 180px;
+                    justify-content: space-between;
+                    padding: 5px;
+
+                    & figure {
+                        display: flex;
+                        background-color: #EDE7F6;
+                        align-items: center;
+                        align-self: center;
+                        height: 40px;
+                        width: 90px;
+                        justify-content: space-between;
+                        padding: 10px;
+                        font-size: 20px;
+                        color: #2196F3;
+                        cursor: pointer;
+                        border-radius: 20px;
+
+                        &:hover {
+                            background-color: #2196F3;
+                            color: white;
+
+                            transition: background-color .6s;
+
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .buttons {
+        background-color: #EDE7F6;
+        color: #673AB7;
+        border-radius: 8px;
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: #673AB7;
+            color: #EDE7F6;
+            transition: background-color .6s;
+        }
+
+
+    }
+
+    & main {
+        width: 100%;
+        display: flex;
+        margin-top: 80px;
+
+        & aside {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 100vh;
+            padding: 20px;
+
+
+
+            & div {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                & section {
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid rgb(231, 230, 230);
+                    gap: 10px;
+                    padding: 20px 10px;
+
+                    & strong {
+                        font-size: 14px;
+                        display: flex;
+                        flex-direction: column;
+
+                        & span {
+                            font-size: 10px;
+                            font-weight: 400;
+                            color: gray;
+                        }
+                    }
+
+                    & small {
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        padding: 20px;
+                        gap: 10px;
+                        font-size: 14px;
+                        border-radius: 8px;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #EDE7F6;
+                            color: #673AB7;
+
+                        }
+
+
+                    }
+
+
+
+                }
+            }
+
+        }
+    }
+
+
+}
+
+.hidden {
+    visibility: hidden;
+}
