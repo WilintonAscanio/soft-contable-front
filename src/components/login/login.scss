@@ -35,61 +35,63 @@
             font-size: 16px;
         }
 
-        &__user {
-            display: flex;
-            flex-direction: column;
-            border: 1px solid gray;
-            border-radius: 8px;
-            padding: 10px;
-            font-size: 12px;
-            color: gray;
 
-            & input {
-                outline: none;
-                border: none;
-            }
+        // &__user {
+        //     display: flex;
+        //     flex-direction: column;
+        //     border: 1px solid gray;
+        //     border-radius: 8px;
+        //     padding: 10px;
+        //     font-size: 12px;
+        //     color: gray;
 
-            &:hover {
-                border: 1px solid black;
-            }
-        }
+        //     & input {
+        //         outline: none;
+        //         border: none;
+        //     }
 
-        & section {
-            display: flex;
-            width: 100%;
-            border: 1px solid gray;
-            border-radius: 8px;
-            padding: 10px;
-            justify-content: space-between;
-            align-items: center;
+        //     &:hover {
+        //         border: 1px solid black;
+        //     }
+        // }
 
-            & label {
-                display: flex;
-                flex-direction: column;
-                font-size: 12px;
-                color: gray;
-                width: 80%;
+        // & section {
+        //     display: flex;
+        //     width: 100%;
+        //     border: 1px solid gray;
+        //     border-radius: 8px;
+        //     padding: 10px;
+        //     justify-content: space-between;
+        //     align-items: center;
+
+        //     & label {
+        //         display: flex;
+        //         flex-direction: column;
+        //         font-size: 12px;
+        //         color: gray;
+        //         width: 80%;
 
 
 
-                & input {
-                    outline: none;
-                    border: none;
-                }
-            }
+        //         & input {
+        //             outline: none;
+        //             border: none;
+        //         }
+        //     }
 
-            &:hover {
-                border: 1px solid black;
-            }
-        }
+        //     &:hover {
+        //         border: 1px solid black;
+        //     }
+        // }
 
         & strong {
             color: #673AB7;
             align-self: end;
             cursor: pointer;
+            font-size: 14px;
         }
 
-        & button {
+        &__button {
             height: 40px;
             border-radius: 12px;
             color: white;

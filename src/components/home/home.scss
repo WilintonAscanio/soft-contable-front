@@ -6,7 +6,7 @@
     &__header {
         width: 100%;
         height: 80px;
-        padding: 20px;
+        padding: 10px 20px;
         position: fixed;
         z-index: 1;
         background-color: white;
@@ -37,12 +37,13 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                height: 100%;
 
                 &__search {
                     display: flex;
                     align-items: center;
                     font-size: 14px;
-                    height: 50px;
+                    height: 80%;
                     width: 400px;
                     border: 1px solid rgb(219, 211, 211);
                     border-radius: 12px;
@@ -76,7 +77,7 @@
                     justify-content: space-between;
                     padding: 5px;
 
-                    & figure {
+                    & div {
                         display: flex;
                         background-color: #EDE7F6;
                         align-items: center;
@@ -124,21 +125,25 @@
 
     }
 
-    & main {
+    .hidden {
+        display: none;
+    }
+
+    &__main {
         width: 100%;
         display: flex;
         margin-top: 80px;
 
-        & aside {
+        &__aside {
             display: flex;
             flex-direction: column;
-            width: 30%;
+            width: 25%;
             height: 100vh;
             padding: 20px;
 
 
 
-            & div {
+            &__div {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -154,6 +159,7 @@
                         font-size: 14px;
                         display: flex;
                         flex-direction: column;
+
 
                         & span {
                             font-size: 10px;
@@ -184,6 +190,49 @@
 
 
                 }
+
+                .auth {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    &__accordion {
+
+                        & section {
+                            display: flex;
+                            flex-direction: column;
+
+                            & small {
+                                display: flex;
+
+                                &:hover {
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+
+                        &__name {
+
+
+                            &__child {
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: #EDE7F6;
+                                color: #673AB7;
+                                border-radius: 8px;
+
+                            }
+
+                        }
+
+
+                    }
+                }
             }
 
         }
@@ -192,6 +241,15 @@
 
 }
 
-.hidden {
-    visibility: hidden;
+@media (max-width : 900px) {
+    .home {
+
+        &__main {
+
+            &__aside {
+                
+            }
+
+        }
+    }
 }

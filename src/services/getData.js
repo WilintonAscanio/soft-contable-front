@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getData = async () => {
   try {
-    const URL = "https://picsum.photos/v2/list?page=2&limit=100";
+    const URL = "http://181.69.24.20:81/api/Perfiles";
 
     const { data } = await axios.get(URL);
     return data;
